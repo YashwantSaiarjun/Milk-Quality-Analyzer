@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form1</title>
+        <link rel="stylesheet" href="./template/form1.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+              Milk Quality Analyzer
+            </div>
+            <form action='/predict' method="POST">
+                <div class="form">
+                    <div class="inputfield">
+                        <label>pH Value</label>
+                        <input type="text" class="input" placeholder="pH value" required name="PH">
+                    </div>
+
+
+                    <div class="inputfield">
+                        <label>Temperature</label>
+                        <input type="text" class="input" placeholder="in Celsius" required name="Temp">
+                    </div>
+
+
+                    <div class="inputfield">
+                        <label>Taste</label>
+                        <input type="text" class="input" placeholder="0 or 1" required name="Taste">
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Odor</label>
+                        <input type="text" class="input" placeholder="0 or 1" required name="Odor">
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Fat</label>
+                        <input type="text" class="input" placeholder="0 or 1" required name="Fat">
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Turbidity</label>
+                        <input type="text" class="input" placeholder="0 or 1" required name="Turbidity">
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Color</label>
+                        <input type="text" class="input" placeholder="white scale value" required name="Color">
+                    </div>
+
+                    <div class="inputfield">
+                        <p class="input">
+                            {{result}}<br>
+                        </p>
+                    </div>
+
+
+              <div class="inputfield">
+                <input type="submit" value="Register" class="btn">
+              </div>
+            </div>
+            </form>
+        </div>
+
+    </body>
+</html>
